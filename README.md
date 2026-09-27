@@ -31,7 +31,7 @@ sequenceDiagram
     participant Queue as Grupo5Queue
     participant Consumidor
 
-    Cliente->>Productor: GET /api/numbers?numbers=9;3;15;1;8
+    Cliente->>Productor: GET /api/numbers?numbers=9%3B3%3B15%3B1%3B8
     Productor->>Exchange: Publica la cadena de números
     Exchange->>Queue: Enruta con Grupo5Routing
     Queue->>Consumidor: Entrega el mensaje
